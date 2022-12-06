@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+            <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Mod app</title>
+
+    <style>
+        body {
+            font-family: 'Montserrat',sans-serif;
+            background: #f0f1f4;
+        }
+        .primary-color {
+            color: #ff7f79;
+        }
+        .background-primary {
+            background-color: #ff7f79;
+        }
+        .secondary-color {
+            color: #aaaaaa;
+        }
+        .background-secondary {
+            background-color: #aaaaaa;
+        }
+        .active-nav {
+            background: #ff7f79;
+            padding: 2px 15px;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="wrapper" class="d-flex ">
+        <aside class="bg-white border-end d-lg-block d-md-block d-none" id="sidebar" style="min-height:100vh;"> 
+            <ul style="list-style: none;margin:0;padding:0;display:flex;align-items:center;flex-direction:column;margin-top: 4em;"class=" px-3">
+                <li class="active-nav my-2 rounded-circle shadow" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+                    <i class="ion-ios-home" style="font-size: 35px;"></i>
+                </li>
+                <li class="my-2">
+                    <i class="ion-android-apps secondary-color" style="font-size:35px;"></i>
+                </li>
+                <li class="my-2">
+                    <i class="ion-ios-game-controller-b secondary-color" style="font-size: 35px;"></i>
+                </li>
+            </ul>
+        </aside>
+        <main class="bg-white" id="main-content" style="width: 100%;">
+            <header class="navbar navbar-expand-lg bg-white navbar-light border-bottom">
+                <div class="container-fluid px-4">
+                    <a href="" class="navbar-brand">
+                        <strong>BossGame</strong>
+                    </a>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto" style="font-weight: 500;">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <section class="px-4 container-fluid py-4">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h5 style="font-weight: 600;">Game Phổ biến</h5>
+                        <div class="card mt-3 mb-4" style="background:linear-gradient(75deg,red,#ff7f79);">
+                            <div class="card-body py-5 px-2">
+                                <div class="text-center">
+                                    <img src="https://play-lh.googleusercontent.com/s6JGmEQedDR2jR8qQGi5hDAaMXZzI7aI7EY7mrF9OgCfUZ0nXElxqo5z12XFi7TEJ8g=s120-rw" alt="" class="w-50 rounded ">
+                                </div>
+                                <div class="text-center text-white mt-3">
+                                    <strong>Subway Surfers</strong>
+                                    <p style="font-size: 15px;" class="my-0">
+                                       Mod: Vô Hạn Tiền 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 style="font-weight: 600;font-size: 18px;">Xu hướng</h5>
+                        <ul class="" style="margin:0;padding:0;list-style: none;">
+                            <li class="mb-2" style="font-weight: 300;">
+                                <i class="ion-ios-arrow-forward me-2">Alight Motion</i>
+                            </li>
+                            <li class="mb-2" style="font-weight: 300;">
+                                <i class="ion-ios-arrow-forward me-2">YouTube</i>
+                            </li>
+                            <li class="mb-2" style="font-weight: 300;">
+                                <i class="ion-ios-arrow-forward me-2">YouTube Vanced</i>
+                            </li>
+                            <li class="mb-2" style="font-weight: 300;">
+                                <i class="ion-ios-arrow-forward me-2">VSCO</i>
+                            </li>
+                            <li class="mb-2" style="font-weight: 300;">
+                                <i class="ion-ios-arrow-forward me-2">Lucky Patcher</i>
+                            </li>
+                            <li class="mb-2" style="font-weight: 300;">
+                                <i class="ion-ios-arrow-forward me-2">PicsArt</i>
+                            </li>
+                            <li class="mb-2" style="font-weight: 300;">
+                                <i class="ion-ios-arrow-forward me-2">Mp3 juice</i>
+                            </li>
+                            <li class="mb-2" style="font-weight: 300;">
+                                <i class="ion-ios-arrow-forward me-2">GB Whatsapp</i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <section class="mb-2 py-10 px-1" >
+                           
+                                <div  class=" row align-items-center" >
+                                    <img src="https://images.hdqwalls.com/download/clash-of-clans-halloween-5k-9h-3840x2160.jpg" alt="" class="h-10 rounded">  
+                               
+                                </div>
+                        </section>
+                        <div class="navbar">
+                            <h5 class="" style="font-weight:600;">Game Mới</h5>
+                            <i class="ion-ios-more ms-auto" style="font-size:30px;"></i>
+                            </div>
+                        
+                        <div class="row mb-4">
+                            <div class="col-lg-3 mb-3">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="https://play-lh.googleusercontent.com/y1J3-OrqJIlezTtaung2sPOnHY9wS2hdJh26ADkwcc3kdZy4DTGyv94IN_YRvdKy0y4=s120-rw" alt="" class="w-25 rounded" style="object-fit: cover;">
+                                        <div class="ms-4" style="flex: 1;">
+                                            <strong>
+                                                Asphalt 8:Airborne
+                                            </strong>
+                                            <p style="font-size: 14px;font-weight: 300;" class="my-0">
+                                                 Mod: Mua Miễn Phí
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="https://play-lh.googleusercontent.com/DczNJvqVhpZcXfuQIzw4oAiSlD74lA338dKDFwY4npfEpZ9EEagGwOBM6qjJ621h9V-Q=s120-rw" alt="" class="w-25 rounded" style="object-fit: cover;">
+                                        <div class="ms-4" style="flex: 1;">
+                                            <strong>
+                                                Anger of stick 5:zombie
+                                            </strong>
+                                            <p style="font-size: 14px; font-weight: 300;" class="my-0">
+                                                 Mod:Vô Kim Cương
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="https://play-lh.googleusercontent.com/DzZ3En2Wuhx8Jw3FsVsSsyfzT2csAOC5n4H8a64mXmiVp-N_lweEMSY62lbX8Ksc7Ps=s120-rw" alt="" class="w-25 rounded" style="object-fit: cover;">
+                                        <div class="ms-4" style="flex: 1;">
+                                            <strong>
+                                                Play Together
+                                            </strong>
+                                            <p style="font-size: 14px; font-weight: 300;" class="my-0">
+                                                 Mod:Menu/Auto fishing
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="https://play-lh.googleusercontent.com/tWf7zH8bwqgP9Hcl-eUPQgqXKdjQE9X-HuDloccXO70PM6zYQMtZtPhXAMl1jheVM0E=s120-rw" alt="" class="w-25 rounded" style="object-fit: cover;">
+                                        <div class="ms-4" style="flex: 1;">
+                                            <strong>
+                                                Dragon City
+                                            </strong>
+                                            <p style="font-size: 14px; font-weight: 300;" class="my-0">
+                                                 Mod:One Hit,Vô hạn tiền
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar">
+                        <h5 class="" style="font-weight:600;">Ứng dụng Mới</h5>
+                        <i class="ion-ios-more ms-auto" style="font-size:30px;"></i>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-lg-3">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="https://play-lh.googleusercontent.com/ZU9cSsyIJZo6Oy7HTHiEPwZg0m2Crep-d5ZrfajqtsH-qgUXSqKpNA2FpPDTn-7qA5Q=s120-rw" alt="" class="w-25 rounded" style="object-fit: cover;">
+                                        <div class=" ms-4" style="flex: 1;">
+                                            <strong>
+                                                Telegram
+                                            </strong>
+                                            <p style="font-size: 14px;font-weight: 300;" class="my-0">
+                                                 Mod:Lite, Optimized
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="https://play-lh.googleusercontent.com/lB6Ro6pjPw17G8HnTvv_qerC2yMGlvjVpryNXoeKfxyglyB8Ljk1HUxmegKU85acTmQ=s120-rw" alt="" class="w-25 rounded" style="object-fit: cover;">
+                                        <div class=" ms-4" style="flex: 1;">
+                                            <strong>
+                                                Viber Messenger
+                                            </strong>
+                                            <p style="font-size: 14px; font-weight: 300;" class="my-0">
+                                                 Mod:Optimized/Lite
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="https://play-lh.googleusercontent.com/r9zF77jorOmkaRlXnvsLiuVQ3p_gYW8y7x_UL-COoH9PxaTUEMbW1wiwS0z1n1Q31Q=s120-rw" alt="" class="w-25 rounded" style="object-fit: cover;">
+                                        <div class=" ms-4" style="flex: 1;">
+                                            <strong>
+                                                Photoshop E
+                                            </strong>
+                                            <p style="font-size: 14px; font-weight: 300;" class="my-0">
+                                                 Mod:Premium
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body d-flex align-items-center">
+                                        <img src="https://play-lh.googleusercontent.com/Mxu4YhAr45fbX_iBwi4LiRuSDn9G8R-C_i6PF4Oqys6TqQab2Jl7U5w4WGDtoPwhpTk=s120-rw" alt="" class="w-25 rounded" style="object-fit: cover;">
+                                        <div class=" ms-4" style="flex: 1;">
+                                            <strong>
+                                                Home Workout
+                                            </strong>
+                                            <p style="font-size: 14px; font-weight: 300;" class="my-0">
+                                                 Mod:Premium
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
